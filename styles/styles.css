@@ -1,0 +1,112 @@
+:root{
+    --dark_cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very_dark_blue: hsl(212, 21%, 14%);
+    --dark_grayish_blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --fs_paragraph: 14px;
+    --font_family_Montserrat: "Montserrat";
+    --font_family_Fraunces: "Fraunces";
+    --fw_S: 500;
+    --fw_M: 700;
+}
+
+body{
+    background-color: var(--cream);
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product{
+    height: 28.125rem;
+    width: 37.5rem;
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 8px;
+}
+
+.product__img{
+    background-image: url('../images/image-product-desktop.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+    border-radius: 8px 0px 0px 8px;
+
+}
+
+.product__section{
+    padding: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.product__type{
+    font-family: var(--font_family_Montserrat);
+    font-weight: 300;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+.product__name{
+    font-size: 2.1rem;
+    line-height: 2.1rem;
+    padding: 0px;
+    margin: 0px;
+    padding-right: 2rem;
+}
+
+.product__detail{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font_family_Montserrat);
+    color: var(--dark_grayish_blue);
+    font-size: 0.9rem;
+}
+
+.product__price-section{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.product__final-price{
+    color: var(--dark_cyan);
+    font-weight: var(--fw_M);
+    font-size: 2rem;
+    font-family: var(--font_family_Fraunces);
+}
+
+.product__original-price{
+    color: var(--dark_grayish_blue);
+    text-decoration: line-through;
+    font-size: 0.8rem;
+}
+
+.button__add-to-card{
+    background-color: var(--dark_cyan);
+    border: 0px;
+    border-radius: 8px;
+    padding: 0.7rem;
+    width: 100%;
+    color: var(--white);
+    font-weight: var(--fw_M);
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.button__icon{
+    height: 0.8rem;
+}

@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Product preview card component</title>
@@ -15,22 +20,27 @@
   </style>
 </head>
 <body>
+  <main>
+    <article class="product">
+      <div class="product__img"></div>
+        <div class="product__section">
+          <span class="product__type">Perfume</span>
+          <h1 class="product__name">Gabrielle Essence Eau De Parfum</h1>
+          <p class="product__detail">
+            A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+            Perfumer-Creator for the House of CHANEL.
+          </p>
 
-  Perfume
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+          <div class="product__price-section">
+            <div class="product__final-price">$149.99</div>
+            <div class="product__original-price">$169.99</div>
+          </div>
+          <button class="button__add-to-card">
+            <img class="button__icon" src="./images/icon-cart.svg" alt="">
+            Add to Cart
+          </button>
+        </div>
+    </article>
+  </main>
 </body>
 </html>
