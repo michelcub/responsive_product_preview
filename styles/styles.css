@@ -13,6 +13,8 @@
 
 body{
     background-color: var(--cream);
+    margin: 0px;
+    padding: 0px;
 }
 
 main{
@@ -21,6 +23,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
 .product{
@@ -109,4 +112,51 @@ main{
 
 .button__icon{
     height: 0.8rem;
+}
+
+@media (max-width: 568px){
+    .product{
+        grid-template-columns: 1fr;
+        height: calc(100vh - 2rem);
+        width: calc(100vw - 2rem);
+    }
+
+    .product__img{
+        height: 13em;
+        border-radius: 8px 8px 0px 0px;
+        background-image: url('../images/image-product-mobile.jpg');
+        background-position: center;
+        background-size: cover;
+        background-clip: border-box;
+    }
+
+    .product__section{
+        padding:  0px 1.5rem 0px 1.5rem;
+    }
+
+    .product__type{
+        font-size: 0.8rem;
+    }
+
+    .product__name{
+        font-size: 2rem;
+        line-height: 1.8rem;
+    }
+
+    .product__detail{
+        font-size: 1rem;
+    }
+
+    .product__final-price{
+        font-size: 1.8rem;
+    }
+
+    .product__original-price{
+        font-size: 0.7rem;
+    }
+
+    .button__add-to-card{
+        font-size: 0.6rem;
+    }
+    
 }
